@@ -28,7 +28,7 @@ portable-atomic = { version = "1.11", features = ["critical-section"] }
 defmt = "1.0"
 defmt-rtt = "1.0"
 panic-probe = { version = "1.0", features = ["print-defmt"] }
-rmk = { version = "0.7.3", features = ["split"] }
+rmk = { version = "0.7.3", default-features = false, features = ["split", "storage", "usb_log", "col2row"] }
 static_cell = "2.1.1"
 
 [patch.crates-io]
